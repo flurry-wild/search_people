@@ -4,9 +4,9 @@ namespace App\Services;
 
 use GuzzleHttp\Client as Guzzle;
 
-class VkPlatform implements PlatformInterface
+class VkPlatform extends PlatformAbstract implements PlatformInterface
 {
-    public function getPeople($search)
+    public function getPeopleSearch($search)
     {
         $guzzle = new Guzzle();
         $url = 'https://api.vkontakte.ru/method/users.search?access_token='.env('VK_TOKEN')."&v=5.141&q=$search&fields=photo_100&count=5";

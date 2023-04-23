@@ -4,5 +4,5 @@ namespace App\Services;
 
 interface PlatformInterface
 {
-    function getPeople($search);
+    function getPeopleSearch($search);
 }
