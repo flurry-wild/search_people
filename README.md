@@ -15,6 +15,10 @@
 <img src="Снимок экрана от 2023-04-21 23-49-25.png">
 
 <img src="Снимок экрана от 2023-04-21 23-46-48.png">
+
+<p>
+На фронте используется Vue.js c библиотекой PrimeVue.
+</p>
 <p><code>composer install</code></p>
 <p><code>npm install</code></p>
 <p><code>npm run watch</code></p>
