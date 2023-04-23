@@ -5,14 +5,14 @@
                 <div class="col-12 flex align-content-around align-items-center flex-wrap card-container">
                     <InputText type="text" v-model="human"  placeholder="Фамилия Имя"/>
                 </div>
-                <div class="col-3"></div>
-                <div class="col-3">
+                <div class="col-1 col-lg-3"></div>
+                <div class="col-5 col-lg-3">
                     <Listbox v-model="selectedSource" :options="sources" optionLabel="name" class="p-invalid w-full md:w-14rem" />
                 </div>
-                <div class="col-3 flex align-content-around align-items-center flex-wrap card-container">
+                <div class="col-5 col-lg-3 flex align-content-around align-items-center flex-wrap card-container">
                     <Button label="Найти людей" @click="sendForm"/>
                 </div>
-                <div class="col-3"></div>
+                <div class="col-1 col-lg-3 "></div>
             </div>
         </div>
     </div>
