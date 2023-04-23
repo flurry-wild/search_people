@@ -1,0 +1,28 @@
+{
+    "data":[
+        {
+            "itemImageSrc": "images/1643181508_1-phonoteka-org-p-fon-dlya-prezentatsii-komanda-1.jpg",
+            "thumbnailImageSrc": "images/1643181508_1-phonoteka-org-p-fon-dlya-prezentatsii-komanda-1.jpg",
+            "alt": "Description for Image 3",
+            "title": "Title 3"
+        },
+        {
+            "itemImageSrc": "images/laptop-20220328-1.jpg",
+            "thumbnailImageSrc": "images/laptop-20220328-1.jpg",
+            "alt": "Description for Image 3",
+            "title": "Title 3"
+        },
+        {
+            "itemImageSrc": "images/1_1.jpg",
+            "thumbnailImageSrc": "images/1_1.jpg",
+            "alt": "Description for Image 1",
+            "title": "Title 1"
+        },
+        {
+            "itemImageSrc": "images/e817855d75dccee4bc1b050d4f9a7399217997ce0_599_399_c.jpg",
+            "thumbnailImageSrc": "images/e817855d75dccee4bc1b050d4f9a7399217997ce0_599_399_c.jpg",
+            "alt": "Description for Image 3",
+            "title": "Title 3"
+        }
+    ]
+}
