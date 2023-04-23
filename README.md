@@ -18,3 +18,6 @@
 <p><code>composer install</code></p>
 <p><code>npm install</code></p>
 <p><code>npm run watch</code></p>
+
+<img src="Снимок экрана от 2023-04-24 01-05-18.png">
+
