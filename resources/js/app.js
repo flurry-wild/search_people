@@ -3,6 +3,9 @@ import { createApp } from 'vue';
 
 import App from './components/App.vue';
 import PrimeVue from 'primevue/config';
+
+import store from './store';
+
 import InputText from 'primevue/inputtext';
 import Calendar from 'primevue/calendar';
 import Card from 'primevue/card';
@@ -39,6 +42,9 @@ app.component('Listbox', Listbox);
 app.component('ProgressBar', ProgressBar);
 app.component('DataTable', DataTable);
 app.component('Column', Column);
+
+app.use(store);
 app.use(PrimeVue);
+
 app.mount("#app");
 

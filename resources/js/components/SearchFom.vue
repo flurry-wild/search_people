@@ -16,29 +16,6 @@
             </div>
         </div>
     </div>
-    <div class="card bg-transparent-500 mt-5">
-        <div class="p-inputgroup mt-5 bg-transparent-100 p-6 border-round">
-            <div class="grid w-full flex align-content-center">
-                <div class="col-12 flex align-content-around align-items-center flex-wrap card-container">
-                    <DataTable :value="results" tableStyle="width: 100%;" v-if="results !== null">
-                        <Column field="first_name" header="Имя"></Column>
-                        <Column field="last_name" header="Фамилия"></Column>
-                        <Column field="last_name" header="Профиль">
-                            <template #body="slotProps">
-                                <a :href="slotProps.data.link">{{ slotProps.data.link }}</a>
-                            </template>
-                        </Column>
-                        <Column header="Фото">
-                            <template #body="slotProps">
-                                <img :src="slotProps.data.photo" alt="Фото профиля" width="100">
-                            </template>
-                        </Column>
-                    </DataTable>
-                    <h4 v-else>Данные аккаунтов</h4>
-                </div>
-            </div>
-        </div>
-    </div>
 </template>
 <script>
 import axios from 'axios';
@@ -63,7 +40,6 @@ export default {
                 value: 'vk'
             },
             human: null,
-            results: null
         }
     },
     methods: {
@@ -77,8 +53,8 @@ export default {
                 }
             })
             .then((response) => {
-                this.results = response.data.data;
-                console.log(this.results);
+                this.$store.state.searchPeople = response.data.data;
+                console.log(this.$store.state.searchPeople);
             })
             .catch((error) => {
                 this.errors = error.response.data.errors;
